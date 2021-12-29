@@ -1,6 +1,9 @@
 - name: Hello World Sample
   hosts: all
   tasks:
+    - name: "Ansible | List all known variables and facts"
+      debug:
+        var: hostvars[inventory_hostname]
     - name: Hello Message
       debug:
         msg: "Hello David World!"
