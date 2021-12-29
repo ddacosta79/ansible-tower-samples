@@ -6,4 +6,4 @@
         var: hostvars[inventory_hostname]
     - name: Hello Message
       debug:
-        msg: "Hello David World!"
+        msg: "Hello {{ policy_name }} !!"
